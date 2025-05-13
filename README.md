@@ -140,6 +140,8 @@ cmake --build --preset default-vs-msvc-windows
 
 See <https://docs.docker.com/engine/install>
 
+### Do you have Linux
+
 ### Step 1. Build docker container
 
 ```sh
@@ -156,4 +158,32 @@ docker run --rm -it -v$(pwd):/project voxel-engine bash -c "cmake -DCMAKE_BUILD_
 
 ```sh
 docker run --rm -it -v$(pwd):/project -v/tmp/.X11-unix:/tmp/.X11-unix -v${XAUTHORITY}:/home/user/.Xauthority:ro -eDISPLAY --network=host voxel-engine ./build/VoxelEngine
+```
+
+### Do you have Windows
+
+### Step 1. You need to install VcXsrv
+
+### Step 2. Run VcXsrv with the command
+
+```powershell
+.\vcxsrv.exe :0 -multiwindow -ac
+```
+
+### Step 3. Build docker container
+
+```powershell
+docker build -t voxel-engine .
+```
+
+### Step 4. Build project using the docker container
+
+```powershell
+docker run --rm -it -v "${PWD}:/project" voxel-engine bash -c "cmake -DCMAKE_BUILD_TYPE=Release -Bbuild && cmake --build build"
+```
+
+### Step 5. Run project using the docker container
+
+```powershell
+docker run --rm -it -v "${PWD}:/project" -e DISPLAY=host.docker.internal:0.0 --network host voxel-engine ./build/VoxelEngine
 ```
