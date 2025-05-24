@@ -2,8 +2,8 @@
 
 ## Latest release
 
-- [Download](https://github.com/MihailRis/VoxelEngine-Cpp/releases/latest) | [Скачать](https://github.com/MihailRis/VoxelEngine-Cpp/releases/latest)
-- [Documentation](https://github.com/MihailRis/VoxelEngine-Cpp/blob/release-0.27/doc/en/main-page.md) | [Документация](https://github.com/MihailRis/VoxelEngine-Cpp/blob/release-0.27/doc/ru/main-page.md)
+- [Download](https://github.com/MihailRis/VoxelCore/releases/latest) | [Скачать](https://github.com/MihailRis/VoxelCore/releases/latest)
+- [Documentation](https://github.com/MihailRis/VoxelCore/blob/release-0.27/doc/en/main-page.md) | [Документация](https://github.com/MihailRis/VoxelCore/blob/release-0.27/doc/ru/main-page.md)
 
 ## Build project in Linux
 
@@ -71,8 +71,8 @@ yay -S entt
 ### Building engine with CMake
 
 ```sh
-git clone --recursive https://github.com/MihailRis/VoxelEngine-Cpp.git
-cd VoxelEngine-Cpp
+git clone --recursive https://github.com/MihailRis/VoxelCore.git
+cd VoxelCore
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -95,8 +95,8 @@ brew install glfw3 glew glm libpng libvorbis lua luajit libcurl openal-soft skyp
 ### Building engine with CMake
 
 ```sh
-git clone --recursive https://github.com/MihailRis/VoxelEngine-Cpp.git
-cd VoxelEngine-Cpp
+git clone --recursive https://github.com/MihailRis/VoxelCore.git
+cd VoxelCore
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -128,8 +128,8 @@ $env:PATH = "$env:VCPKG_ROOT;$env:PATH"
 
 After installing **vcpkg** you can build project:
 ```PowerShell
-git clone --recursive https://github.com/MihailRis/VoxelEngine-Cpp.git
-cd VoxelEngine-Cpp
+git clone --recursive https://github.com/MihailRis/VoxelCore.git
+cd VoxelCore
 cmake --preset default-vs-msvc-windows
 cmake --build --preset default-vs-msvc-windows
 ```
