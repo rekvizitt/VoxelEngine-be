@@ -59,7 +59,6 @@ menu.Quit=Выхад
 menu.Save and Quit to Menu=Захаваць і Выйсці ў Меню
 menu.Settings=Налады
 menu.Reset settings=Скінуць налады
-menu.Contents Menu=Меню кантэнт-пакаў
 menu.Open data folder=Адкрыць тэчку з дадзенымі
 menu.Open content folder=Адкрыць тэчку [content]
 
